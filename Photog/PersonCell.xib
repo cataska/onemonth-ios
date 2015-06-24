@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PersonCell" customModule="Photog" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GQ-Zd-Zmd">
+                        <rect key="frame" x="211" y="0.0" width="109" height="57"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="750" constant="57" id="kib-zX-GIy"/>
+                            <constraint firstAttribute="width" constant="109" id="yfd-32-EPf"/>
+                        </constraints>
+                        <state key="normal" image="FollowButton">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="didTapFollow:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ake-4V-aMQ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="2GQ-Zd-Zmd" secondAttribute="trailing" id="9lR-FL-4TX"/>
+                    <constraint firstItem="2GQ-Zd-Zmd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="AUA-5F-um8"/>
+                    <constraint firstAttribute="bottom" secondItem="2GQ-Zd-Zmd" secondAttribute="bottom" id="HCK-zx-HgR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="followButton" destination="2GQ-Zd-Zmd" id="MZ2-5c-wNl"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FollowButton" width="109" height="57"/>
+    </resources>
+</document>

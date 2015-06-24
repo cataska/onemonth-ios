@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedViewController" customModule="Photog" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="rGg-W3-gdn" id="K8f-ST-wOl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="381" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rGg-W3-gdn">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="qZr-5H-Dt4"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rGg-W3-gdn" secondAttribute="bottom" id="5PO-uE-JpF"/>
+                <constraint firstItem="rGg-W3-gdn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6Yh-qB-qwq"/>
+                <constraint firstItem="rGg-W3-gdn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AeM-yr-j04"/>
+                <constraint firstAttribute="bottom" secondItem="rGg-W3-gdn" secondAttribute="bottom" id="G02-yP-N6C"/>
+                <constraint firstItem="rGg-W3-gdn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IVJ-G5-spq"/>
+                <constraint firstAttribute="trailing" secondItem="rGg-W3-gdn" secondAttribute="trailing" id="e0I-w9-tFG"/>
+                <constraint firstItem="rGg-W3-gdn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hFo-6e-BXK"/>
+                <constraint firstAttribute="trailing" secondItem="rGg-W3-gdn" secondAttribute="trailing" id="l3V-2H-lrQ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
